@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.doctor.mapper.BaseInfoMapper" >
+ 
+<select id="getInfoByPage"  resultType="com.common.pojo.baseInfo" >
+	SELECT * from baseinfo LIMIT #{0},#{1}
+ </select> 
+ <select id="getbaseInfoLength"  resultType="int" >
+	select count(*) from baseinfo
+ </select> 
+ <select id="getInfo"  resultType="com.common.pojo.baseInfo">
+	select * from baseinfo 
+ </select>
+ <select id="getInfoByCount"  resultType="com.common.pojo.baseInfo" parameterType="int">
+	SELECT * from baseinfo where xuhao BETWEEN #{0} and #{1} 
+ </select> 
+ 
+  <select id="getConnectionOldManByYiYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-01-%'
+ </select>
+  <select id="getConnectionOldManByErYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-02-%'
+ </select>
+  <select id="getConnectionOldManBySanYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-03-%'
+ </select>
+  <select id="getConnectionOldManBySiYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-04-%'
+ </select>
+  <select id="getConnectionOldManByWuYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-05-%'
+ </select>
+  <select id="getConnectionOldManByLiuYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-06-%'
+ </select>
+  <select id="getConnectionOldManByQiYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-07-%'
+ </select>
+  <select id="getConnectionOldManByBaYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-08-%'
+ </select>
+  <select id="getConnectionOldManByJiuYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-09-%'
+ </select>
+  <select id="getConnectionOldManByShiYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-10-%'
+ </select>
+  <select id="getConnectionOldManByShiYiYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-11-%'
+ </select>
+  <select id="getConnectionOldManByShiErYue"  resultType="int" parameterType="String">
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' and time like '%${year}-12-%'
+ </select>
+  <select id="getConnectionOldManByTotall"  resultType="int" >
+	SELECT count(*) FROM doctor_oldman where d_id='142730199704010610' 
+ </select>
+ 
+  <select id="getDoctorInfo"  resultType="com.common.pojo.DoctorInfo" >
+	SELECT d_hospital,d_department,d_introduction,u_name from doctor 
+	join user  on user.u_id=doctor.d_id WHERE doctor.u_id=user.u_id='1' 
+	and doctor.d_id='1'
+ </select>
+<select id="add"  parameterType="com.common.pojo.jianyi">
+	INSERT into jianyi (xuhao,zhuangtai,pinggu,jianyi,id,shijian,name) 
+	VALUES (#{xuhao},#{zhuangtai},#{pinggu},#{jianyi},#{id},#{shijian},#{name})
+</select>
+ 
+<select id="get"  resultType="com.common.pojo.jianyi" parameterType="String">
+	SELECT * from jianyi where id=#{id}
+</select>
+
+<select id="getzixunByzhuangtai"  resultType="com.common.pojo.zixun" parameterType="int">
+	SELECT * from zixun where zhuangtai =#{zhuangtai}
+</select>
+
+<select id="getzixun"  resultType="com.common.pojo.zixun" >
+	SELECT * from zixun 
+</select>
+<select id="getzixunByName"  resultType="com.common.pojo.zixun" parameterType="String">
+	SELECT * from zixun where xingming=#{xingming}
+</select>
+<select id="getzixunByNameAndzhangtai"  resultType="com.common.pojo.zixun" >
+	SELECT *FROM zixun where zhuangtai=#{1} and xingming=#{0} 
+</select>
+
+<select id="getzixunByYiHuiFu"  resultType="com.common.pojo.zixun" >
+	SELECT * from zixun WHERE zhuangtai ="1"
+</select>
+<select id="getzixunByWeiHuiFu"  resultType="com.common.pojo.zixun" >
+	SELECT * from zixun WHERE zhuangtai ="0"
+</select>
+<select id="mendZiXunZhuangTaiByXuHao"  parameterType="String" >
+	update zixun set zhuangtai="1" WHERE xuhao=#{xuhao}
+</select>
+<update id="addHuiFu" >
+	INSERT into  huifu (id,text) VALUES(#{0},#{1}) 
+</update>
+
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.doctor.mapper.DetailInfoMapper" >
+ 
+<select id="getxinlvById"  resultType="com.common.detail.xinlv" parameterType="String">
+	SELECT * from xinlv where id=#{id}
+</select>
+<select id="getniaosuanById"  resultType="com.common.detail.niaosuan" parameterType="String">
+	SELECT * from niaosuan where id=#{id}
+</select>
+<select id="getdanguchunById"  resultType="com.common.detail.danguchun" parameterType="String">
+	SELECT * from danguchun where id=#{id}
+</select>
+<select id="getxuetangById"  resultType="com.common.detail.xuetang" parameterType="String">
+	SELECT * from xuetang where id=#{id}
+</select>
+<select id="getgumiduById"  resultType="com.common.detail.gumidu" parameterType="String">
+	SELECT * from gumidu where id=#{id}
+</select>
+<select id="getshengaotizhongById"  resultType="com.common.detail.shengaotizhong" parameterType="String">
+	SELECT * from shengaotizhong where id=#{id}
+</select>
+<select id="getzhifangById"  resultType="com.common.detail.zhifang" parameterType="String">
+	SELECT * from zhifang where id=#{id}
+</select>
+<select id="getshuimianshijianById"  resultType="com.common.detail.shuimianshijian" parameterType="String">
+	SELECT * from shuimianshijian where id=#{id}
+</select>
+<select id="getxueyaById"  resultType="com.common.detail.xueya" parameterType="String">
+	SELECT * from xueya where id=#{id}
+</select>
+<select id="getBingRenName"  resultType="String" parameterType="String">
+	SELECT name from jianyi where id=#{id} LIMIT 1
+</select>                  
+                   
+</mapper>
