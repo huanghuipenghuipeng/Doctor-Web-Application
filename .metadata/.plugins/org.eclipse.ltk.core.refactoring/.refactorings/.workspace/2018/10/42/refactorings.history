@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="删除 11 个资源" deleteContents="true" description="删除 11 个资源" element1="/taoato-common" element10="/taotao-manager-web" element11="/taotao-parent" element2="/taotao-content" element3="/taotao-content-interface" element4="/taotao-content-service" element5="/taotao-manager" element6="/taotao-manager-dao" element7="/taotao-manager-interface" element8="/taotao-manager-pojo" element9="/taotao-manager-service" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="11" stamp="1539781311833"/>
+</session>

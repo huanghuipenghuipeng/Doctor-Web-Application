@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/description=
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/enabled=true
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/isSystem=false
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/name=PDE Target Bundle Pool
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/provider=
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/type=org.eclipse.equinox.p2.artifact.repository.simpleRepository
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/uri=file\:/D\:/\u4EE3\u7801/22\u53F7/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.bundle_pool/version=1
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/description=
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/enabled=true
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/isSystem=true
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/name=download cache
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/provider=
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/type=org.eclipse.equinox.p2.artifact.repository.simpleRepository
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/uri=file\:/D\:/\u4EE3\u7801/22\u53F7/.metadata/.plugins/org.eclipse.pde.core/.p2/org.eclipse.equinox.p2.core/cache/
+repositories/file\:_D\:_\u4EE3\u7801_22\u53F7_.metadata_.plugins_org.eclipse.pde.core_.p2_org.eclipse.equinox.p2.core_cache/version=1

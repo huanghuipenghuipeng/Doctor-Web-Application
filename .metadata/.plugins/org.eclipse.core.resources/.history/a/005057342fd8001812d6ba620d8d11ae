@@ -1,0 +1,49 @@
+//package com.doctor.portal.intecepter;
+//
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletResponse;
+//
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.web.servlet.HandlerInterceptor;
+//import org.springframework.web.servlet.ModelAndView;
+//
+//import com.doctor.service.JedisClientService;
+//
+//import redis.clients.jedis.JedisPool;
+//
+//public class Login implements HandlerInterceptor{
+//	
+//	@Autowired 
+//	private JedisPool jedisPool;
+//	@Autowired
+//	private JedisClientService j;
+//	
+//	
+//	@Override
+//	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+//			throws Exception {
+//		jedisPool=new JedisPool("192.168.46.18",6379);
+//		System.out.println();
+//		System.out.println("ok");
+//		j.set("k", "hhp");
+//		System.out.println();
+//		System.out.println("preHandle");
+//		System.out.println();
+//		return true;
+//	}
+//
+//	@Override
+//	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
+//			ModelAndView modelAndView) throws Exception {
+//		// TODO 自动生成的方法存根
+//		
+//	}
+//
+//	@Override
+//	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
+//			throws Exception {
+//		// TODO 自动生成的方法存根
+//		
+//	}
+//
+//}

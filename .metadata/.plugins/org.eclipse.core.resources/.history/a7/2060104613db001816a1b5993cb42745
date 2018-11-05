@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+  	pageEncoding="utf-8"%>
+  	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html >
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./lib/bootstrap/js/bootstrap.js">
+        <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./lib/html5shiv/html5shiv.js">
+         <script src="./js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="./lib/echarts/echarts.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <title>家庭医生首页</title>
+    </head>
+    <body>
+<!-- A -->
+<div id="shouye_header" style=" background-position: -290px 0px;">
+    <div id="header_top_content">
+        <div style="margin:0;padding:0;">
+            <ul style="float: right;margin-top:12px;">
+                <li><a href="http://localhost:8082/index" style="color:white">主页</a></li>
+                <li><a href="http://localhost:8082/zixun" style="color:white">老人回复</a></li>
+                <li><a href="http://localhost:8082/baseinfo" style="color:white">老人健康</a></li>
+                <li><a href="https://lbs.amap.com/dev/mapdata/share/7a02a8e9d99271a4101dbac8dada9301" style="color:white">老人定位</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- B -->
+<div id="index_main">
+<!-- 第一个标题 -->
+    <div id="index_main_title">
+        <p><span></span>家庭医生门户服务</p>
+    </div>
+<!-- 服务总体介绍 -->
+    <ul class="index_main_nav">
+        <li class="index_main_nav_item">
+                <div class="media">
+                        <div class="media-left">
+                                <img src="./img/p01.png" >
+                        </div>
+                        <div class="media-body">
+                                <div class="index_main_item_right">
+                                        <p>回答老人问题</p>
+                                        <span>解答老人日常生活中的问题,及时回复有助于保证老人的身心健康 </span>
+                                    </div>
+                        </div>
+                    </div>
+        </li>
+        <li class="index_main_nav_item">
+                <div class="media">
+                        <div class="media-left">
+                                <img src="./img/p02.png" >
+                        </div>
+                        <div class="media-body">
+                                <div class="index_main_item_right">
+                                        <p>查看老人信息</p>
+                                        <span>查看老人基本信息,以及多样化显示老人体检各项数据指标</span>
+                                    </div>
+                        </div>
+                    </div>
+        </li>
+        <li class="index_main_nav_item">
+            <div class="media">
+                <div class="media-left">
+                        <img src="./img/p03.png" >
+                </div>
+                <div class="media-body">
+                        <div class="index_main_item_right">
+                                <p>老人定位</p>
+                                <span>通过地图显示老人家庭地理位置,方便关心老人日常起居</span>
+                            </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="index_main_nav_item">
+                <div class="media">
+                        <div class="media-left">
+                                <img src="./img/p04.png" >
+                        </div>
+                        <div class="media-body">
+                                <div class="index_main_item_right">
+                                        <p>关联老人数据</p>
+                                        <span>显示与自己关联老人数量的柱状图,方便查看自己的每天事宜</span>
+                                    </div>
+                        </div>
+                    </div>
+        </li>
+    </ul>
+<!-- 高德地图 -->
+    <div class="index_main_content">
+            <iframe class="col-md-5"
+            src="https://lbs.amap.com/dev/mapdata/share/7a02a8e9d99271a4101dbac8dada9301"
+            ></iframe>
+            <div class="col-md-1 "></div>
+                <div id="main1" class="col-md-5 chart" style="border-style:solid 1px"></div>
+    </div>
+<!-- 图案链接 -->
+<ul class="index_main_port_sort">
+    <li class="answer_question col-md-3">
+    <a href="http://localhost:8082/zixun">
+        <img src="./img/answer.png"></a>
+    </li>
+    <li class="answer_question  col-md-3">
+    <a href="https://lbs.amap.com/dev/mapdata/share/7a02a8e9d99271a4101dbac8dada9301">
+            <img src="./img/position.png"></a>
+    </li>
+    <li class="answer_question col-md-3">
+    <a href="http://localhost:8082/baseinfo">
+            <img src="./img/detail.png"></a>
+    </li>
+    <li class="answer_question col-md-3">
+    <a href="http://localhost:8082/index">
+            <img src="./img/home.png"></a>
+    </li>
+</ul>
+<ul class="index_main_port_sort_text">
+    <li class="answer">
+        <a href="http://localhost:8082/zixun">回复老人</a>
+    </li>
+    <li class="answer">
+            <a href="https://lbs.amap.com/dev/mapdata/share/7a02a8e9d99271a4101dbac8dada9301">定位老人</a>
+    </li>
+    <li class="answer">
+            <a href="http://localhost:8082/baseinfo">健康老人</a>
+        </li>
+        <li class="answer">
+                <a href="http://localhost:8082/index">返回主页</a>
+    </li>
+</ul>
+<!-- 医生动态 -->
+    <div class="index_main_brand_news">
+        <p class="index_main_brand_title"><span></span> 服务动态</p>
+        <ul class="index_main_brand_news_contend ">
+            <li class="index_main_brand_news_company col-md-5">
+                <span>个人信息</span>
+            </li>
+            <li class="index_main_brand_news_gap col-md-1" >
+            </li>
+            <li class="index_main_brand_news_company col-md-5">
+                    <span>老人动态</span>
+            </li>
+        </ul>
+        <ul class="index_main_brand_news_message">
+            <!-- 医生信息 -->
+            <li class="message_doctor col-md-6">
+                <table class="table table-bordered">
+                        <tr>
+                            <td rowspan="4" id="picture" style="width:70px;" >
+                                <img class="media-object" src="img/doctor.png">
+                            </td>
+                            <td align="center">
+                                  ${doctor.u_name }
+                            </td>
+                        </tr>
+                        <tr>  
+                            <td  align="center">
+                               ${doctor.d_hospital }
+                            </td>
+                            </tr>
+                        <tr>    
+                         <td  align="center">
+                             ${doctor.d_department }
+                         </td>
+                        </tr>
+                        <tr>
+                            <td  align="center">
+                                ${doctor.d_introdution }
+                            </td>
+                        </tr>
+                    </table>    
+            </li>
+            <!-- 老人动态 -->
+            <li class="message_warning col-md-6">
+                        <div class="list-group">
+                                <a  class="list-group-item ">
+                                  <h4 class="list-group-item-heading">
+                                     <span style="color: red">[吴洋] 65岁</span>
+                                     	<span>,男,山西省太原市中北大学文澜二号公寓
+                                     	<p style="padding:13px">联系电话18003419306</p>
+                                     </span>
+                                     </h4>
+                                  </a>
+                                <a class="list-group-item ">
+                                  <h4 class="list-group-item-heading">
+                                     <span style="color: red">[向平] 66岁</span>,男,山西省太原市中北大学文澜二号公寓,联系电话18003419306
+                                     </h4>
+                                </a>
+                                <a  class="list-group-item ">
+                                  <h4 class="list-group-item-heading">
+                                     <span style="color: red">[杜娜] 65岁</span>,男,山西省太原市中北大学文澜二号公寓,联系电话18003419306
+                                     </h4>
+                                </a>
+                                <a class="list-group-item ">
+                                        <h4 class="list-group-item-heading">
+                                           <span style="color: red">[吴晓伟] 70岁</span>,男,山西省太原市中北大学文澜二号公寓,联系电话18003419306
+                                           </h4>
+                                </a>
+                                <a  class="list-group-item ">
+                                        <h4 class="list-group-item-heading">
+                                           <span style="color: red">[龙溪全] 65岁</span>,男,山西省太原市中北大学文澜二号公寓,联系电话18003419306
+                                           </h4>
+                                </a> 
+                    </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- B -->
+<div id="footer">
+    <ul class="index_footer_nav">
+    <!-- 联系我们 -->
+    <li class="connet_partner col-md-3">
+            <ul class="connet_partner_nav">
+                <li class="connet_partner_nav_title">联系我们</li>
+                <li class="connet_partner_nav_title">
+                    <img class="phone" src="./img/call.png"> 18003419306</li>
+                <li class="connet_partner_nav_title">
+                    <img src="./img/email.png">  1040805205@qq.com</li>
+                <li class="connet_partner_nav_title">
+                    <img src="./img/address.png">  中北大学文澜二</li>
+            </ul>
+    </li>
+    <!-- 合作伙伴 -->
+    <li class="connet_us col-md-3">
+        <ul class="connet_us_nav">
+            <li class="connet_us_nav_title">合作伙伴</li>
+            <li class="connet_us_nav_title"> 全国养老服务中心</li>
+            <li class="connet_us_nav_title">太原市养老监管中心</li>
+            <li class="connet_us_nav_title">中北大学老年活动中心</li>
+        </ul>
+    </li>
+    <!--服务项目 -->
+    <li class="connet_partner col-md-3">
+            <ul class="connet_partner_nav">
+                <li class="connet_partner_nav_title">本次服务</li>
+                <li class="connet_partner_nav_title">  <a href="http://localhost:8082/zixun" style="color:white">回复老人</a></li>
+                <li class="connet_partner_nav_title"><a href="http://localhost:8082/baseinfo" style="color:white">查看老人体检信息</a></li>
+                <li class="connet_partner_nav_title"><a href="https://lbs.amap.com/dev/mapdata/share/7a02a8e9d99271a4101dbac8dada9301" style="color:white">显示老人定位</a></li>
+            </ul>
+        </li>
+    <!-- 二维码 -->
+    <li class="connet_code col-md-3" >
+            <ul class="connet_code_nav" >
+                <li style="margin-bottom: 50px;">
+                        <div class="media">
+                                <div class="media-top">
+                                    <img class="media-object" src="./img/code1.png" >
+                                </div>
+                                <div class="media-body" style="padding: 11px 8px;">
+                                    <span class="media-heading" style="color:white;">医生群落</span>
+                                </div>
+                                </div>
+                </li>
+                <li>
+                        <div class="media">
+                                <div class="media-top">
+                                    <img class="media-object" src="./img/code2.png" >
+                                </div>
+                                <div class="media-body"  style="padding: 11px 8px;">
+                                    <span class="media-heading" style="color:white;">医生兴趣</span>
+                                </div>
+                                </div>
+                </li>
+            </ul>
+    </li>
+    </ul>
+    <!-- 版权信息 -->
+    <div id="footer_filing">
+        <ul style="color:white;">
+            <li>网站备案/许可证号浙ICP备17025324号-1</li>
+            <li>中北大学2015级软件学院实训小组  &nbsp &nbsp &nbsp 版权所有</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    //   所有数据的更新都通过 setOption实现，你只需要定时获取数据，setOption 填入数据..........
+    //   这里的代码是自动执行
+       var myChart1 = echarts.init(document.getElementById('main1'));
+        $.ajax({
+            type:"get",
+            url:"/count",
+            success:function(data){
+                // 指定图表的配置项和数据
+                var option = {
+                    title: {
+                        text: '关联老人数量',
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    xAxis:  {
+                        type: 'category',
+                        boundaryGap: false,
+                        data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月','总人数']
+                    },
+                    yAxis: {
+                        type: 'value',
+                        axisLabel: {
+                            formatter: '{value} 个'
+                        }
+                    },
+                   series: [
+                       {
+                           name:'数量',
+                           type:'line',
+                        //    data:[data[0],data[0], data[0]],
+                           data:[data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8],data[9],data[10],data[11],data[12]],
+                        },
+                   ]
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                myChart1.setOption(option);
+                //console.log(data[0]+"  "+data[1]);
+            },
+            error:function(){
+                console.log("没有能够查询咨询人数");
+            }
+        });
+        // 请求结束
+            </script> 
+    </body>
+</html>

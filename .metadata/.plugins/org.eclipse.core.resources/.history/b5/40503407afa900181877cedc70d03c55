@@ -1,0 +1,12 @@
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	private TbItemMapper itemMapper;
+	
+	@Override
+	public TbItem getItemById(long itemId) {
+		TbItem tbItem = itemMapper.selectByPrimaryKey(itemId);
+		return tbItem;
+	}
+}

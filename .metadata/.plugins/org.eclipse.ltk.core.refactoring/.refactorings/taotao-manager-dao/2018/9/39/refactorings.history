@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;doctor-manager-dao/src/main/java/com.doctor.mapper&apos;&#x0D;&#x0A;－ 原始项目：“taotao-manager-dao”&#x0D;&#x0A;－ 目标元素：“doctor-manager-dao/src/main/java/com.doctor.mapper”&#x0D;&#x0A;－ 原始元素：&#x0D;&#x0A;JavaRefactoringDescriptorComment_textual_move_only=仅移动文本com.taotao.mapper.TbContentCategoryMapper.java&#x0D;&#x0A;JavaRefactoringDescriptorComment_textual_move_only=仅移动文本TbContentCategoryMapper.xml" description="复制元素" destination="=doctor-manager-dao/src\/main\/java&lt;com.doctor.mapper" element1="src/main/java/com/taotao/mapper/TbContentCategoryMapper.xml" element2="/src\/main\/java&lt;com.taotao.mapper{TbContentCategoryMapper.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1538143005272" units="1" version="1.0"/>
+</session>

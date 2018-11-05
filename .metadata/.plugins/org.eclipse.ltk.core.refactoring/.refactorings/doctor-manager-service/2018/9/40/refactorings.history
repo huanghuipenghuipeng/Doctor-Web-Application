@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SqlMapConfig.xml&apos; to &apos;doctor-portal-web/src/main/resources&apos;&#x0D;&#x0A;－ 原始项目：“doctor-manager-service”&#x0D;&#x0A;－ 目标元素：“doctor-portal-web/src/main/resources”&#x0D;&#x0A;－ 原始元素：“SqlMapConfig.xml”" description="复制文件" destination="=doctor-portal-web/src\/main\/resources" element1="src/main/resources/SqlMapConfig.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1538278148501" units="0" version="1.0"/>
+</session>

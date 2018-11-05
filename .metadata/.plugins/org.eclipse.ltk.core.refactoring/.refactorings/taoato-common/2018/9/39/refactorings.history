@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将包“com.taotao.common.utils”复制到“doctor-common/src/main/java”&#x0D;&#x0A;－ 原始项目：“taoato-common”&#x0D;&#x0A;－ 目标元素：“doctor-common/src/main/java”&#x0D;&#x0A;－ 原始元素：“taoato-common/src/main/java/com.taotao.common.utils”" description="复制包" destination="=doctor-common/src\/main\/java" element1="/src\/main\/java&lt;com.taotao.common.utils" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1538214253479" version="1.0"/>
+</session>
